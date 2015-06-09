@@ -33,21 +33,21 @@ ES6 包括以下新特性:
 ## ECMAScript 6 Features
 
 ### Arrows
-Arrows are a function shorthand using the `=>` syntax.  They are syntactically similar to the related feature in C#, Java 8 and CoffeeScript.  They support both expression and statement bodies.  Unlike functions, arrows share the same lexical `this` as their surrounding code.
+箭头函数就是个是简写形式的函数表达式, 使用 `=>` 简写. 她的语法与 C#, Java 8 CoffeeScript 相似, 她支持函数表达式与函数声明.  与传统的 `function` 不同的是, 她拥有词法作用域的this值. **箭头函数总是匿名的**.
 
 ```JavaScript
-// Expression bodies
+// 表达式
 var odds = evens.map(v => v + 1);
 var nums = evens.map((v, i) => v + i);
 var pairs = evens.map(v => ({even: v, odd: v + 1}));
 
-// Statement bodies
+// 声明
 nums.forEach(v => {
   if (v % 5 === 0)
     fives.push(v);
 });
 
-// Lexical this
+// 作用域 this
 var bob = {
   _name: "Bob",
   _friends: [],
@@ -59,7 +59,13 @@ var bob = {
 ```
 
 ### Classes
-ES6 classes are a simple sugar over the prototype-based OO pattern.  Having a single convenient declarative form makes class patterns easier to use, and encourages interoperability.  Classes support prototype-based inheritance, super calls, instance and static methods and constructors.
+ES6 Classes 是基于对象原型(prototype-based OO pattern)的语法糖形式. 便捷的声明方式, 使 Classes 的模式便于定义, 并且更易于操作. Classes 支持基于原型继承, 父类调用(super calls), 实例 / 静态方法 / 构造函数;
+
+> 关键字:
+
+> 静态方法 `static` 
+
+> 属性 `get` `set`
 
 ```JavaScript
 class SkinnedMesh extends THREE.Mesh {
