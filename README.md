@@ -1,32 +1,34 @@
-# ECMAScript 6 <sup>[git.io/es6features](http://git.io/es6features)</sup>
+# ECMAScript 6 特性-中文 
 
-## Introduction
-ECMAScript 6, also known as ECMAScript 2015, is the upcoming version of the ECMAScript standard.  This standard is targeting ratification in June 2015.  ES6 is a significant update to the language, and the first update to the language since ES5 was standardized in 2009. Implementation of these features in major JavaScript engines is [underway now](http://kangax.github.io/es5-compat-table/es6/).
+> 英文 [git.io/es6features](http://git.io/es6features)
 
-See the [draft ES6 standard](https://people.mozilla.org/~jorendorff/es6-draft.html) for full specification of the ECMAScript 6 language.
+## 简介
+ECMAScript 6, 也称之为 ECMAScript 2015, 是 ECMAScript 即将发布的版本.  2015年6月正式认可该标准.  ES6 是一个重要的更新, 自2009年 ES5 发布以来的第一次更新. 已经实现了这些特性的 JavaScript 引擎可参考 [underway now](http://kangax.github.io/es5-compat-table/es6/).
 
-ES6 includes the following new features:
-- [arrows](#arrows)
-- [classes](#classes)
-- [enhanced object literals](#enhanced-object-literals)
-- [template strings](#template-strings)
-- [destructuring](#destructuring)
-- [default + rest + spread](#default--rest--spread)
-- [let + const](#let--const)
-- [iterators + for..of](#iterators--forof)
-- [generators](#generators)
-- [unicode](#unicode)
-- [modules](#modules)
-- [module loaders](#module-loaders)
-- [map + set + weakmap + weakset](#map--set--weakmap--weakset)
-- [proxies](#proxies)
-- [symbols](#symbols)
-- [subclassable built-ins](#subclassable-built-ins)
-- [promises](#promises)
-- [math + number + string + array + object APIs](#math--number--string--array--object-apis)
-- [binary and octal literals](#binary-and-octal-literals)
-- [reflect api](#reflect-api)
-- [tail calls](#tail-calls)
+参阅 ECMAScript 6 的完整规范 [draft ES6 standard](https://people.mozilla.org/~jorendorff/es6-draft.html).
+
+ES6 包括以下新特性:
+- [arrows](#arrows) 箭头函数
+- [classes](#classes) 类
+- [enhanced object literals](#enhanced-object-literals) 对象字面量扩展
+- [template strings](#template-strings) 字符串模板
+- [destructuring](#destructuring) 解构赋值
+- [default + rest + spread](#default--rest--spread) 函数参数的默认值/变量名/扩展运算符
+- [let + const](#let--const) let 与 const 命令
+- [iterators + for..of](#iterators--forof) 迭代器 (for..of)
+- [generators](#generators) Generator 函数
+- [unicode](#unicode) 字符的 unicode 表示法
+- [modules](#modules) 模块
+- [module loaders](#module-loaders) 模块的加载
+- [map + set + weakmap + weakset](#map--set--weakmap--weakset) 数据结构
+- [proxies](#proxies) 代理
+- [symbols](#symbols) 符号标记
+- [subclassable built-ins](#subclassable-built-ins) 内置子类
+- [promises](#promises) 
+- [math + number + string + array + object APIs](#math--number--string--array--object-apis) 新增API
+- [binary and octal literals](#binary-and-octal-literals) 字面量 二进制与八进制
+- [reflect api](#reflect-api) 映射
+- [tail calls](#tail-calls) 尾调用
 
 ## ECMAScript 6 Features
 
