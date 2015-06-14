@@ -10,7 +10,7 @@ ECMAScript 6, 也称之为 ECMAScript 2015, 是 ECMAScript 即将发布的版本
 ES6 包括以下新特性:
 - [arrows](#arrows) 箭头函数
 - [classes](#classes) 类
-- [enhanced object literals](#enhanced-object-literals) 对象字面量扩展
+- [enhanced object literals](#enhanced-object-literals) 增强对象字面量
 - [template strings](#template-strings) 字符串模板
 - [destructuring](#destructuring) 解构赋值
 - [default + rest + spread](#default--rest--spread) 函数参数的默认值/变量名/扩展运算符
@@ -94,7 +94,7 @@ class SkinnedMesh extends THREE.Mesh {
 ```
 
 ### Enhanced Object Literals
-Object literals are extended to support setting the prototype at construction, shorthand for `foo: foo` assignments, defining methods, making super calls, and computing property names with expressions.  Together, these also bring object literals and class declarations closer together, and let object-based design benefit from some of the same conveniences.
+对象字面量扩展, 支持可以设置原型链构建, 属性简写表达式, `foo: foo` 定义方法, 父类调用, 属性名表达式; 总之, 这使得对象字面量与声明类更接近, 并让基于对象的设计也受益于此.
 
 ```JavaScript
 var obj = {
